@@ -1,0 +1,2 @@
+rootProject.name = 'DemoBank'
+include(':appium-tests')
