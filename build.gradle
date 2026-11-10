@@ -1,0 +1,29 @@
+
+plugins {
+    id 'java'
+}
+
+group = 'az.mobileqa'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Appium Java Client
+    testImplementation 'io.appium:java-client:10.0.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.11.0'
+}
+
+test {
+    useTestNG()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
